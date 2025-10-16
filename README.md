@@ -1,12 +1,12 @@
 # api-web-service-TP2
 
-## 🌐 Endpoints disponibles
+## Endpoints disponibles
 
-### 🔹 `GET /api/profile`
+### `GET /api/profile`
 > Génère un **profil complet** à partir du pipeline d’agrégation.
 http://localhost:3000/api/profile
 
-### 🔹 `GET /api/darkdata`
+### `GET /api/darkdata`
 > Expose uniquement les **dark data calculées**.
 http://localhost:3000/api/darkdata
 
@@ -18,7 +18,7 @@ http://localhost:3000/api/darkdata
 | `quote_length` | Nombre de caractères dans la citation | `68` |
 
 
-### 🔹 `GET /api/profiles?count=5`
+### `GET /api/profiles?count=5`
 > Génère plusieurs profils et renvoie également des **statistiques agrégées**.
 http://localhost:3000/api/profile?count=2
 > 
@@ -31,7 +31,7 @@ http://localhost:3000/api/profile?count=2
 
 ---
 
-## 🧪 Tests rapides avec curl
+## Tests rapides avec curl
 
 ```bash
 # Profil unique
@@ -41,14 +41,14 @@ curl http://localhost:3000/api/profile
 curl "http://localhost:3000/api/profiles?count=3"
 
 ---
-## 🚀 Lancement du projet
+## Lancement du projet
 
-### 1️⃣ Installation
+### 1️ Installation
 ```bash
 npm install
 ```
 
-### 2️⃣ Lancer le serveur
+### 2️ Lancer le serveur
 ```bash
 node src/server.mjs
 ```
