@@ -54,8 +54,5 @@ node src/server.mjs
 ```
 
 Le serveur démarre sur :  
-👉 **http://localhost:3000**
-# Dark data uniquement
-curl http://localhost:3000/api/darkdata
-```
+ **http://localhost:3000**
 
