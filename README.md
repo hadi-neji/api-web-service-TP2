@@ -1,30 +1,4 @@
 # api-web-service-TP2
-## 🎯 Objectif du projet
-Ce projet a pour objectif de **réutiliser un pipeline d’agrégation** pour alimenter une **API REST Node.js (Express)**.  
-L’application combine plusieurs sources de données hétérogènes pour produire un **profil utilisateur unifié**,  
-puis génère et expose des **dark data** issues de calculs dérivés.  
-
----
-
-## 🏗️ Structure du projet
-```
-src/
-├── config.mjs              → Configuration générale (port, clés API)
-├── server.mjs              → Serveur Express
-├── controllers/
-│   ├── routes.mjs          → Routes REST exposées
-│   └── users.mjs           → Pipeline d’agrégation et calcul des dark data
-```
-
----
-
-## ⚙️ Technologies utilisées
-- **Node.js**
-- **Express.js** (framework backend)
-- **Axios** (requêtes HTTP)
-- **fs** (sauvegarde locale)
-
----
 
 ## 🚀 Lancement du projet
 
@@ -47,12 +21,15 @@ Le serveur démarre sur :
 
 ### 🔹 `GET /api/profile`
 > Génère un **profil complet** à partir du pipeline d’agrégation.
+http://localhost:3000/api/profile
 
 ### 🔹 `GET /api/profiles?count=5`
 > Génère plusieurs profils et renvoie également des **statistiques agrégées**.
+http://localhost:3000/api/profile?count=2
 
 ### 🔹 `GET /api/darkdata`
 > Expose uniquement les **dark data calculées**.
+http://localhost:3000/api/darkdata
 
 ---
 
@@ -80,10 +57,3 @@ curl "http://localhost:3000/api/profiles?count=3"
 curl http://localhost:3000/api/darkdata
 ```
 
----
-
-## 👨‍💻 Auteur
-**Khaled Ben Salah**  
-Projet académique – ESGI Paris  
-Master 2 – Big Data & Intelligence Artificielle  
-2025
